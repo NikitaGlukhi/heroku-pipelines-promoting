@@ -1,0 +1,25 @@
+{
+  "name": "heroku-pipelines-promoting",
+  "version": "1.0.0",
+  "description": "This action add ability to promote Heroku application to specific apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test",
+    "start": "node index"
+  },
+  "keywords": [
+    "github",
+    "actions",
+    "github-actions",
+    "heroku",
+    "pipeline",
+    "pipelines",
+    "promote",
+    "promotion"
+  ],
+  "author": "Nikita Glukhi",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "1.4.0"
+  }
+}

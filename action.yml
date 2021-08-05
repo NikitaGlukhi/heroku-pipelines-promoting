@@ -1,0 +1,21 @@
+name: "Heroku pipelines promoting"
+description: "Promote apps in your pipeline"
+branding:
+  icon: "upload-cloud"
+  color: "purple"
+inputs:
+  heroku_api_key:
+    description: "This will be used for authentication. You can find it in your heroku homepage account settings"
+    required: true
+  heroku_email:
+    description: "Email that you use with heroku"
+    required: true
+  heroku_app_name:
+    description: "The app name, that will be promoted"
+    required: true
+  heroku_promote_to_app:
+    description: "The app(-s), where will be promoted heroku_app_name"
+    required: false
+runs:
+  using: "node12"
+  main: "index.js"

@@ -1,5 +1,5 @@
 name: "Heroku pipelines promoting"
-description: "Promote apps in your pipeline"
+description: "This simple action will help you to promote your apps throw the pipeline"
 branding:
   icon: "arrow-right-circle"
   color: "purple"

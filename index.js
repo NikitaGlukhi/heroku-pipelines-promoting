@@ -18,7 +18,7 @@ const heroku = {
 };
 
 try {
-    let script = `heroku pipelines:promote -r ${heroku.app_name}`;
+    let script = `heroku pipelines:promote -a ${heroku.app_name}`;
     let statusValue = `Successfully promoted heroku app ${heroku.app_name}`;
 
     script += heroku.promote_to_app ? ` --to ${heroku.promote_to_app}` : '';

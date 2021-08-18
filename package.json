@@ -2,10 +2,12 @@
   "name": "heroku-pipelines-promoting",
   "version": "1.0.0",
   "description": "This action add ability to promote Heroku application to specific apps",
-  "main": "index.js",
+  "main": "bin/action.min.js",
   "scripts": {
     "test": "node test",
-    "start": "node index"
+    "start": "node index",
+    "build:microbundle": "microbundle --format cjs --target node --no-compress --no-sourcemap src/index.ts",
+    "build": "pretty-quick --staged && npm run build:microbundle"
   },
   "keywords": [
     "github",
@@ -19,7 +21,13 @@
   ],
   "author": "Nikita Glukhi",
   "license": "MIT",
-  "dependencies": {
-    "@actions/core": "1.4.0"
+  "devDependencies": {
+    "@actions/core": "1.4.0",
+    "@types/node": "16.6.1",
+    "microbundle": "0.13.3",
+    "prettier": "2.3.2",
+    "pretty-quick": "3.1.1",
+    "ts-node": "10.2.0",
+    "typescript": "4.3.5"
   }
 }

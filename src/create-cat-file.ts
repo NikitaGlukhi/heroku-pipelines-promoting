@@ -1,5 +1,3 @@
-import { execSync } from "child_process";
-
 export function createCatFile(email: string, api_key: string): string {
   return `cat >~/.netrc <<EOF
 machine api.heroku.com

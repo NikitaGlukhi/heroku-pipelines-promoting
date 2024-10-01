@@ -18,5 +18,5 @@ inputs:
     description: "The app(-s), where will be promoted heroku_app_name"
     required: false
 runs:
-  using: "node16"
+  using: "node20"
   main: "bin/action.min.js"

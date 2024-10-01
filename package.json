@@ -1,6 +1,6 @@
 {
   "name": "heroku-pipelines-promoting",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "description": "This action add ability to promote Heroku application to specific apps",
   "main": "bin/action.min.js",
   "scripts": {

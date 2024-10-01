@@ -23,8 +23,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: NikitaGlukhi/heroku-pipelines-promoting@v2.1
+      - uses: actions/checkout@v4
+      - uses: NikitaGlukhi/heroku-pipelines-promoting@v3
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "stage-test-app"

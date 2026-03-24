@@ -26,7 +26,7 @@ try {
   execSync(createCatFile(email, api_key));
   console.log('Created and wrote to ~./netrc');
 
-  execSync('heroku login');
+  execSync('heroku login -i');
   console.log('Successfully logged into Heroku');
   endGroup();
 
